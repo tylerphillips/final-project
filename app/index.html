@@ -3,6 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,15 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+       
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+       
+        <script src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+          google.load("search", "1");
+        </script>
+
+        
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -29,31 +39,21 @@
                 </ul>
                 <h3 class="text-muted">final project</h3>
             </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-            </div>
-
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-
-
-
+            <div class="gs-result gs-imageResult">
+                <div class="gs-image-box">
+                    <a class="gs-image">
+                      <img class="gs-image"/>
+                    </a>
+                    </div>
+                    <div class="gs-text-box">
+                    <div class="gs-snippet"></div>
+                    <div class="gs-size"></div>
+                    <div class="gs-visibleUrl"></div>
                 </div>
             </div>
-
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
-            </div>
-
+            <div id="branding"  style="float: left;"></div><br />
+            <div id="content">Loading...</div>
+            <iframe src="https://embed.spotify.com/?uri=spotify:track:4bz7uB4edifWKJXSDxwHcs" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
         </div>
 
 
