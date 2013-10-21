@@ -1,0 +1,49 @@
+$spotify-green: rgb(134,181,0);
+
+body {
+    background-color: rgb(26, 26, 26);
+	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+}
+
+.container {
+max-width: 1000px;
+}
+
+.spotify-logo {
+	display: inline-block;
+}
+
+.text-muted {
+	position: relative;
+	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	display: inline-block;
+	color: white;
+	top: 5px;
+}
+
+.nav-pills > li.active > a {
+    background-color: $spotify-green;
+    color: #1a1a1a;
+}
+
+a {
+	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+    color: $spotify-green;
+}
+
+a:hover, a:focus {
+	color: $spotify-green;
+
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	background-color: $spotify-green;
+    color: #1a1a1a;
+}
+
+.get-spotify {
+	color: #7AB800;
+	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+

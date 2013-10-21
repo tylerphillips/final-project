@@ -21,8 +21,33 @@ function loadLyrics(data) {
     }, 
     {
       spotifyURI: 'spotify:track:3G9ETaH55bMQx8hwNhAgbU',
-      artistName: 'Gregory Allen Isakov',
+      artistName: 'Gregory Alan Isakov',
       songName: 'The Stable Song'
+    },
+    {
+      spotifyURI: 'spotify:track:4xjC014uAzL5O8xD1Tp6NC',
+      artistName: 'Hudson Taylor',
+      songName: 'Battles'
+    },
+    {
+      spotifyURI: 'spotify:track:60rHc4AkLlP4XVSATvBb6K',
+      artistName: 'Halestorm',
+      songName: 'I Miss The Misery'
+    },
+    {
+      spotifyURI: 'spotify:track:3Kj2EWpIBnvETsYq4cq0IH',
+      artistName: 'Gregory Alan Isakov',
+      songName: 'Big Black Car'
+    },
+    {
+      spotifyURI: 'spotify:track:0kzfqqvipRSBQchrB3xX8D',
+      artistName: 'Dawes',
+      songName: 'When My Time Comes'
+    },
+    {
+      spotifyURI: "spotify:track:7qmCTTSYXiCMe7jboDOk6e",
+      artistName: "The Beautiful South",
+      songName: "Don't Fear The Reaper"
     },
   ]
 
