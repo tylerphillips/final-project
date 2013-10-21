@@ -7,7 +7,7 @@ function loadLyrics(data) {
     {
       spotifyURI: 'spotify:track:2dLLR6qlu5UJ5gk0dKz0h3',
       artistName: 'Lorde',
-      songName: 'Royales'
+      songName: 'Royals'
     }, 
     {
       spotifyURI: 'spotify:track:2JFmTONwQdRaOj2s2DhFah',
@@ -51,9 +51,9 @@ function loadLyrics(data) {
     },
   ]
 
-  // $.get('http://lyrics.wikia.com/api.php?artist='+ songs[0].artistName + '&song=Dime&fmt=realjson&callback=loadLyrics', function(data){
+  $.get('http://lyrics.wikia.com/api.php?artist='+ songs[0].artistName + '&song=Royals&fmt=realjson&callback=loadLyrics', function(data){
     
-  // })
+  })
 
 // google.load('search', '1');
 

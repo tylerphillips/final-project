@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-max-width: 1000px;
+	max-width: 940px;
 }
 
 .spotify-logo {
@@ -28,7 +28,8 @@ max-width: 1000px;
 
 a {
 	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
-    color: $spotify-green;
+    // color: $spotify-green;
+    color: white;
 }
 
 a:hover, a:focus {
@@ -41,9 +42,62 @@ a:hover, a:focus {
     color: #1a1a1a;
 }
 
-.get-spotify {
-	color: #7AB800;
-	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
-	text-decoration: none;
+// Official Spotify button from website
+.about-button {
+	border: 1px solid #7ea613;
+	-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.8);
+	box-shadow: inset 0 1px 1px rgba(255,255,255,0.8);
+	color: #FFF;
+	-webkit-font-smoothing: antialiased;
+	background-image: -webkit-gradient(linear,left 0,left 100%,from(#acd341),to(#88bd32));
+	background-image: -webkit-linear-gradient(top,#acd341,0%,#88bd32,100%);
+	background-image: -moz-linear-gradient(top,#acd341 0,#88bd32 100%);
+	background-image: linear-gradient(to bottom,#acd341 0,#88bd32 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffacd341',endColorstr='#ff88bd32',GradientType=0);
+	background-color: #88bd32;
+	text-shadow: 0 -1px 0 #72942a;
+	margin-right: 10px;
 }
+.get-spotify {
+	border: 1px solid #7ea613;
+	-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.8);
+	box-shadow: inset 0 1px 1px rgba(255,255,255,0.8);
+	color: #FFF;
+	-webkit-font-smoothing: antialiased;
+	background-image: -webkit-gradient(linear,left 0,left 100%,from(#acd341),to(#88bd32));
+	background-image: -webkit-linear-gradient(top,#acd341,0%,#88bd32,100%);
+	background-image: -moz-linear-gradient(top,#acd341 0,#88bd32 100%);
+	background-image: linear-gradient(to bottom,#acd341 0,#88bd32 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffacd341',endColorstr='#ff88bd32',GradientType=0);
+	background-color: #88bd32;
+	text-shadow: 0 -1px 0 #72942a;
+}
+
+// .header {
+// 	color: white;
+// }
+
+// h1 {
+// 	color: white;
+// }
+
+// .detail h1 {
+// 	color: white;
+// }
+
+.follow {
+	margin-top: -10px;
+	color: white;
+}
+
+.terms {
+	color: $spotify-green;
+	text-align: center;
+	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	padding-top: 15px;
+}
+
+
 
