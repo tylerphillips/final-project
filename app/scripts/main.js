@@ -2,20 +2,42 @@ function loadLyrics(data) {
     console.log(data)
   }
 
+  var currentSong = 0
+
+  // fake js
+  $('.next').click(function(){
+  	var newUrl = 'https://embed.spotify.com/?uri=' + songs[currentSong].spotifyURI;
+  	$('#player').attr('src', newUrl)
+  	currentSong ++;
+
+  	$.getJSON("http://lyrics.wikia.com/api.php?callback=?",
+  	{
+  	   func: 'getSong',
+  	   artist: songs[currentSong].artistName,
+  	   song: songs[currentSong].songName,
+  	   fmt: 'realjson' 
+  	},
+  	function(data){
+  	  $('#lyrics').text(data.lyrics);
+
+  	});
+  })
 
   var songs = [
     {
-      spotifyURI: 'spotify:track:2dLLR6qlu5UJ5gk0dKz0h3',
-      artistName: 'Lorde',
-      songName: 'Royals'
-    }, 
-    {
       spotifyURI: 'spotify:track:2JFmTONwQdRaOj2s2DhFah',
       artistName: 'Ben Howard',
-      songName: 'Keep Your Head Up'
+      songName: 'Keep Your Head Up',
+      lyricLink: 'http://lyrics.wikia.com/api.php?artist=Ben_Howard&song=Keep_Your_Head_Up'
     },
     {
-      spotifyURI: 'spotify:artist:5BKsn7SCN2XmbF7apdCpRS',
+      spotifyURI: 'spotify:track:2dLLR6qlu5UJ5gk0dKz0h3',
+      artistName: 'Lorde',
+      songName: 'Royals',
+      lyricLink: 'http://lyrics.wikia.com/api.php?artist=lorde&song=royals'
+    }, 
+    {
+      spotifyURI: 'spotify:track:2QepprWju53OwtTHrpnLo9',
       artistName: 'Goldfrapp',
       songName: 'Happiness'
     }, 
@@ -51,9 +73,10 @@ function loadLyrics(data) {
     },
   ]
 
-  $.get('http://lyrics.wikia.com/api.php?artist='+ songs[0].artistName + '&song=Royals&fmt=realjson&callback=loadLyrics', function(data){
-    
-  })
+  
+
+
+// $.get("https://embed.spotify.com/?uri=" + songs[0].spotifyURI)
 
 // google.load('search', '1');
 
@@ -133,7 +156,7 @@ function loadLyrics(data) {
 //         imageSearch.setSearchCompleteCallback(this, searchComplete, null);
 
 //         // Find me a beautiful car.
-//         imageSearch.execute("Subaru STI");
+//         imageSearch.execute(songs[0].songName + songs[0].artistName);
         
 //         // Include the required Google branding
 //         google.search.Search.getBranding('branding');
