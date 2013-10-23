@@ -24,12 +24,16 @@ function loadLyrics(data) {
   })
 
   var songs = [
-    {
-      spotifyURI: 'spotify:track:2JFmTONwQdRaOj2s2DhFah',
-      artistName: 'Ben Howard',
-      songName: 'Keep Your Head Up',
-      lyricLink: 'http://lyrics.wikia.com/api.php?artist=Ben_Howard&song=Keep_Your_Head_Up'
-    },
+    // {
+    //   spotifyURI: 'spotify:track:2JFmTONwQdRaOj2s2DhFah',
+    //   artistName: 'Ben Howard',
+    //   songName: 'Keep Your Head Up',
+      
+      // spotifyURI: 'spotify:track:2JFmTONwQdRaOj2s2DhFah',
+      // artistName: 'Ben Howard',
+      // songName: 'Keep Your Head Up',
+      // lyricLink: 'http://lyrics.wikia.com/api.php?artist=Ben_Howard&song=Keep_Your_Head_Up'
+    // },
     {
       spotifyURI: 'spotify:track:2dLLR6qlu5UJ5gk0dKz0h3',
       artistName: 'Lorde',
@@ -66,11 +70,27 @@ function loadLyrics(data) {
       artistName: 'Dawes',
       songName: 'When My Time Comes'
     },
+    
+  	// {
+   //    spotifyURI: "spotify:track:17vkimYLXZzpCiFpI3GVA7",
+   //    artistName: "Jessica Brando",
+   //    songName: "Karma Police"
+   //  },
+   //  {
+   //    spotifyURI: "spotify:track:7qmCTTSYXiCMe7jboDOk6e",
+   //    artistName: "The Beautiful South",
+   //    songName: "Don't Fear The Reaper"
+   //  },
     {
-      spotifyURI: "spotify:track:7qmCTTSYXiCMe7jboDOk6e",
-      artistName: "The Beautiful South",
-      songName: "Don't Fear The Reaper"
+      spotifyURI: "spotify:track:3bbdnFcNSHPaYrOzx7dJeE",
+      artistName: "Pheonix",
+      songName: "Lisztomania"
     },
+    // {
+    //   spotifyURI: "spotify:track:7hExqd5aeA6cdDFx6sBfd3",
+    //   artistName: "Pheonix",
+    //   songName: "1901"
+    // },
   ]
 
   

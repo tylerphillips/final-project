@@ -88,10 +88,11 @@ a:hover, a:focus {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffacd341',endColorstr='#ff88bd32',GradientType=0);
 	background-color: #88bd32;
 	text-shadow: 0 -1px 0 #72942a;
-	width:100px;
+	width:250px;
 	border-radius: 5px;
 	padding: 10px 15px;
 	text-align: center;
+	margin-left: 350px;
 }
 
 // .header {
@@ -120,6 +121,14 @@ a:hover, a:focus {
 
 #lyrics {
 	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
-
+	font-size: 25px;
+	color: lightGrey;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
+
+#player {
+	margin-left: 40px;
+}
+
 
