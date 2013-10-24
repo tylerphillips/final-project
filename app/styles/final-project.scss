@@ -74,7 +74,7 @@ a:hover, a:focus {
 	background-color: #88bd32;
 	text-shadow: 0 -1px 0 #72942a;
 }
-.next {
+.next-song {
 	border: 1px solid #7ea613;
 	-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.8);
 	box-shadow: inset 0 1px 1px rgba(255,255,255,0.8);
@@ -92,7 +92,12 @@ a:hover, a:focus {
 	border-radius: 5px;
 	padding: 10px 15px;
 	text-align: center;
-	margin-left: 350px;
+	// margin-left: 350px;
+	margin-left: 65px;
+	margin-bottom: 10px;
+}
+.next-song:hover {
+	color: #86b500;
 }
 
 // .header {
@@ -121,17 +126,24 @@ a:hover, a:focus {
 
 #lyrics {
 	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
-	font-size: 20px;
-	color: lightGrey;
+	font-size: 31px;
+	color: Grey;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	width: 775px;
+	width: 855px;
 	text-align: center;
 	margin-left: 100px;
 }
 
 #player {
 	margin-left: 40px;
+}
+
+#content {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	width: 550px;
 }
 
 
