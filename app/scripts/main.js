@@ -67,6 +67,11 @@ function loadLyrics(data) {
       songName: 'Battles'
     },
     {
+      spotifyURI: 'spotify:track:5PUvinSo4MNqW7vmomGRS7',
+      artistName: 'Robin Thicke',
+      songName: 'Blurred Lines'
+    },
+    {
       spotifyURI: 'spotify:track:3Kj2EWpIBnvETsYq4cq0IH',
       artistName: 'Gregory Alan Isakov',
       songName: 'Big Black Car'
@@ -81,7 +86,17 @@ function loadLyrics(data) {
       artistName: "Pheonix",
       songName: "Lisztomania"
     },
-    
+    {
+      spotifyURI: "spotify:track:4o0NjemqhmsYLIMwlcosvW",
+      artistName: "Band Of Horses",
+      songName: "The Funeral"
+    },
+	{
+      spotifyURI: "spotify:track:0MOzmbwL6Aad4jIOJomWVm",
+      artistName: "Bon Iver",
+      songName: "Towers"
+    },
+
   ]
 
   
@@ -106,5 +121,23 @@ function searchComplete() {
 	  }
 	}
 }
+
+$(function(){
+  var slideShowContainer = $('.slideShow'),
+      slideShowItem = '.slides li',
+      transitionTime = 1000,
+      pauseTime = 3000,
+      curSlide = 0,
+      int = setInterval(function(){
+      if(curSlide === parseInt($(slideShowItem).length - 1)){
+        curSlide = 0;
+      } else {
+        curSlide++;
+      }
+  
+      slideShowContainer.animate({ scrollLeft: $(slideShowItem).width() * curSlide }, transitionTime);
+  }, pauseTime);
+
+})
 
 
