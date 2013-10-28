@@ -20,23 +20,39 @@ function loadLyrics(data) {
   	   fmt: 'realjson' 
   	},
 
+
   	function(data){
   	  $('#lyrics').text(data.lyrics);
+  // Restrict to extra large images only
+  
 
   	  window.imageSearch = new google.search.ImageSearch();
-  	  // Set searchComplete as the callback function when a search is 
-  	  // complete.  The imageSearch object will have results in it.
-  	  imageSearch.setSearchCompleteCallback(this, searchComplete, null);
+
+      // Puts restriction on the the size of the image returned
+      
+      imageSearch.setRestriction(google.search.ImageSearch.RESTRICT_IMAGESIZE,
+                             google.search.ImageSearch.IMAGESIZE_MEDIUM);
+      
+      // Set searchComplete as the callback function when a search is 
+      // complete.  The imageSearch object will have results in it.
+
+      imageSearch.setSearchCompleteCallback(this, searchComplete, null);
+
+
+
+    //   var resultSize = new google.search.ImageSearch();
+    // resultSize.setResultSetSize(8);
 
   	  // find the lyrics
   	  imageSearch.execute(data.lyrics);
   	  
   	  // Include the required Google branding
   	  google.search.Search.getBranding('branding');
+
+
   	});
 
   	currentSong ++;
-    
 
   })
 
@@ -46,6 +62,11 @@ function loadLyrics(data) {
       artistName: 'Ben Howard',
       songName: 'Keep Your Head Up',
     }, 
+    {
+      spotifyURI: "spotify:track:3bbdnFcNSHPaYrOzx7dJeE",
+      artistName: "Pheonix",
+      songName: "Lisztomania"
+    },
     {
       spotifyURI: 'spotify:track:2dLLR6qlu5UJ5gk0dKz0h3',
       artistName: 'Lorde',
@@ -83,11 +104,6 @@ function loadLyrics(data) {
       songName: 'When My Time Comes'
     },
     {
-      spotifyURI: "spotify:track:3bbdnFcNSHPaYrOzx7dJeE",
-      artistName: "Pheonix",
-      songName: "Lisztomania"
-    },
-    {
       spotifyURI: "spotify:track:4o0NjemqhmsYLIMwlcosvW",
       artistName: "Band Of Horses",
       songName: "The Funeral"
@@ -111,9 +127,11 @@ function searchComplete() {
 	$('#content').html('')
 	// Check that we got results
 	if (imageSearch.results && imageSearch.results.length > 0) {
-
+    
 	  // Loop through our results, printing them to the page.
 	  var results = imageSearch.results;
+
+
 	  for (var i = 0; i < results.length; i++) {
 	    // For each result write it's title and image to the screen
 	    var result = results[i]
@@ -124,12 +142,13 @@ function searchComplete() {
       
       
 	  }
-      // $("#content").slidesjs()
+      $("#content").slidesjs()
         
-      $("#content").slidesjs("refresh");
-        console.log("slider is working")
+      // $("#content").slidesjs("refresh");
+      console.log("slider is working")
   }
 }
+
 
 
 // $(function(){

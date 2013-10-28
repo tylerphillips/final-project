@@ -725,6 +725,7 @@
               } else {
                   return $.data(element, "plugin_" + pluginName)[options]();
               }
+
           }
         return the_return;
       };
