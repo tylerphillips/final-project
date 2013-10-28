@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-	max-width: 980px;
+	max-width: 1040px;
 }
 
 img {
@@ -17,7 +17,7 @@ img {
 .spotify-logo {
 	display: inline-block;
 	padding-right: 0px;
-	margin-left: 40px;
+	margin-left: 50px;
 }
 
 .text-muted {
@@ -30,7 +30,7 @@ img {
 }
 
 .nav {
-	margin-right: 40px;
+	margin-right: 50px;
 }
 
 .nav-pills > li.active > a {
@@ -152,32 +152,32 @@ a:hover, a:focus {
 	padding-top: 15px;
 }
 
-.slideShow {
-  width: 500px;
-  overflow: auto;
-  position: relative;
-  height: 300px;
-  margin: 20px auto;
-}
+// .slideShow {
+//   width: 500px;
+//   overflow: auto;
+//   position: relative;
+//   height: 300px;
+//   margin: 20px auto;
+// }
 
-.slides {
-  	width: 500%;
-    height: 100%;
-}
+// .slides {
+//   	width: 500%;
+//     height: 100%;
+// }
 
-.slides li {
-  float: left;
-  width: 500px;
-  height: 100%;
-  display: block;
-  line-height: 300px;
-  text-align: center;
-}
+// .slides li {
+//   float: left;
+//   width: 500px;
+//   height: 100%;
+//   display: block;
+//   line-height: 300px;
+//   text-align: center;
+// }
 
-.slides li:nth-of-type(even) {
-  background: #ff8330;
-}
+// .slides li:nth-of-type(even) {
+//   background: #ff8330;
+// }
 
-.slides li:nth-of-type(odd) {
-  background: #6CC5EB;
-}
+// .slides li:nth-of-type(odd) {
+//   background: #6CC5EB;
+// }

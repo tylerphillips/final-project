@@ -117,8 +117,13 @@ function searchComplete() {
 	    // For each result write it's title and image to the screen
 	    var result = results[i]
 	    var image = $('<img src="'+ result.tbUrl + '">')
-	    $('#content').append(image)
+      // $(image.appendTo('li'))
+      $('#content').append(image)
+      // console.log(image)
+      
+      
 	  }
+    $("#content").slidesjs()
 	}
 }
 
