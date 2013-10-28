@@ -121,16 +121,19 @@ a:hover, a:focus {
 }
 
 // Lyrics Style
+
 #lyrics {
 	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
 	font-size: 25px;
 	color: Grey;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	width: 855px;
+	width: 565px;
 	text-align: center;
-	margin-left: 100px;
-	text-shadow: 2px 2px 2px rgb(15, 15, 15);
+	margin-left: 30px;
+	text-shadow: 2px 2px 2px #0f0f0f;
+	display: inline-block;
+
 }
 
 #player {
@@ -143,6 +146,7 @@ a:hover, a:focus {
 	position: relative;
 	overflow: hidden;
 	width: 550px;
+	// height: 409px;
 }
 
 .terms {
@@ -150,6 +154,10 @@ a:hover, a:focus {
 	text-align: center;
 	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
 	padding-top: 15px;
+}
+
+.slidesjs-container {
+	height: 409px
 }
 
 // .slideShow {

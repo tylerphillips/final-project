@@ -36,6 +36,7 @@ function loadLyrics(data) {
   	});
 
   	currentSong ++;
+    
 
   })
 
@@ -123,26 +124,30 @@ function searchComplete() {
       
       
 	  }
-    $("#content").slidesjs()
-	}
+      // $("#content").slidesjs()
+        
+      $("#content").slidesjs("refresh");
+        console.log("slider is working")
+  }
 }
 
-$(function(){
-  var slideShowContainer = $('.slideShow'),
-      slideShowItem = '.slides li',
-      transitionTime = 1000,
-      pauseTime = 3000,
-      curSlide = 0,
-      int = setInterval(function(){
-      if(curSlide === parseInt($(slideShowItem).length - 1)){
-        curSlide = 0;
-      } else {
-        curSlide++;
-      }
-  
-      slideShowContainer.animate({ scrollLeft: $(slideShowItem).width() * curSlide }, transitionTime);
-  }, pauseTime);
 
-})
+// $(function(){
+//   var slideShowContainer = $('.slideShow'),
+//       slideShowItem = '.slides li',
+//       transitionTime = 1000,
+//       pauseTime = 3000,
+//       curSlide = 0,
+//       int = setInterval(function(){
+//       if(curSlide === parseInt($(slideShowItem).length - 1)){
+//         curSlide = 0;
+//       } else {
+//         curSlide++;
+//       }
+  
+//       slideShowContainer.animate({ scrollLeft: $(slideShowItem).width() * curSlide }, transitionTime);
+//   }, pauseTime);
+
+// })
 
 
