@@ -13,6 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/jquery.bxslider.css">
         <link rel="stylesheet" href="styles/final-project.css">
         <!-- endbuild -->
        
@@ -50,20 +51,27 @@
         
         <div class="container">
             
-            <!-- Spotify Player -->
-            <iframe  id="player" src="https://embed.spotify.com/?uri=spotify:track:2JFmTONwQdRaOj2s2DhFah" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+            
 
             <!-- Image Slides -->
-            <div id="content">
-            
-            </div>
+            <ul class="bxslider">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <!-- <div id="content"></div> -->
 
             <!-- Next Song Button -->
             <div class="next-song">Play Next Song</div>
             
+            <!-- Spotify Player -->
+            <iframe  id="player" src="https://embed.spotify.com/?uri=spotify:track:2JFmTONwQdRaOj2s2DhFah" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
             <!-- Hard-coded Lyrics -->
             <h1 id="lyrics">
-                I spent my time, watching
+                Welcome to Spotify Visual Lyrics. Click "Play Next Song" and see random images that are the result of searching the lyrics of the song that is playing.
+                <!-- I spent my time, watching
                 The spaces that have grown between us
                 And I cut my mind on the second best,
                 Oh the scars that come with the greenness
@@ -72,7 +80,7 @@
                 And I try my best to embrace the darkness
                 In which I swim
 
-                Now walking back, down this m[...]
+                Now walking back, down this m[...] -->
             </h1>
 
     <!-- Lyrics As Scrolling Text -->
@@ -115,7 +123,9 @@
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
-        <script src="scripts/jquery.slides.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="scripts/jquery.bxslider.min.js"></script>
+        <script src="scripts/jquery.bxslider.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->

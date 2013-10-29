@@ -92,6 +92,8 @@ a:hover, a:focus {
 	color: white;
 }
 
+
+
 // Body Styling
 .next-song {
 	border: 1px solid #7ea613;
@@ -114,6 +116,7 @@ a:hover, a:focus {
 	// margin-left: 350px;
 	margin-left: 65px;
 	margin-bottom: 10px;
+	display: inline-block;
 }
 
 .next-song:hover {
@@ -145,10 +148,15 @@ a:hover, a:focus {
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
-	width: 550px;
+	// width: 550px;
+	width: 1040px;
 	// height: 409px;
+	
 }
-
+#content img {
+		width:260px;
+		display: inline-block;
+	}
 .terms {
 	color: $spotify-green;
 	text-align: center;
@@ -159,6 +167,8 @@ a:hover, a:focus {
 .slidesjs-container {
 	height: 409px
 }
+
+
 
 // .slideShow {
 //   width: 500px;

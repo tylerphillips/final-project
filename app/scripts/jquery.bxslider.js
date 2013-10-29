@@ -23,7 +23,7 @@
 		easing: null,
 		slideMargin: 0,
 		startSlide: 0,
-		randomStart: false,
+		randomStart: true,
 		captions: false,
 		ticker: false,
 		tickerHover: false,
@@ -31,7 +31,7 @@
 		adaptiveHeightSpeed: 500,
 		video: false,
 		useCSS: true,
-		preloadImages: 'visible',
+		preloadImages: 'all',
 		responsive: true,
 
 		// TOUCH
@@ -71,7 +71,7 @@
 
 		// CAROUSEL
 		minSlides: 1,
-		maxSlides: 1,
+		maxSlides: 4,
 		moveSlides: 0,
 		slideWidth: 0,
 

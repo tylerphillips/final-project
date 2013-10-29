@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+
 function loadLyrics(data) {
     console.log(data)
   }
@@ -31,7 +35,9 @@ function loadLyrics(data) {
       // Puts restriction on the the size of the image returned
       
       imageSearch.setRestriction(google.search.ImageSearch.RESTRICT_IMAGESIZE,
-                             google.search.ImageSearch.IMAGESIZE_MEDIUM);
+                             google.search.ImageSearch.IMAGESIZE_LARGE);
+
+
       
       // Set searchComplete as the callback function when a search is 
       // complete.  The imageSearch object will have results in it.
@@ -43,16 +49,16 @@ function loadLyrics(data) {
     //   var resultSize = new google.search.ImageSearch();
     // resultSize.setResultSetSize(8);
 
-  	  // find the lyrics
-  	  imageSearch.execute(data.lyrics);
-  	  
-  	  // Include the required Google branding
-  	  google.search.Search.getBranding('branding');
+      // find the lyrics
+      imageSearch.execute(data.lyrics);
+      
+      // Include the required Google branding
+      google.search.Search.getBranding('branding');
 
 
-  	});
+    });
 
-  	currentSong ++;
+    currentSong ++;
 
   })
 
@@ -108,16 +114,13 @@ function loadLyrics(data) {
       artistName: "Band Of Horses",
       songName: "The Funeral"
     },
-	{
+  {
       spotifyURI: "spotify:track:0MOzmbwL6Aad4jIOJomWVm",
       artistName: "Bon Iver",
       songName: "Towers"
     },
 
   ]
-
-  
-
 
 $.get("https://embed.spotify.com/?uri=" + songs[0].spotifyURI)
 
@@ -135,21 +138,39 @@ function searchComplete() {
 	  for (var i = 0; i < results.length; i++) {
 	    // For each result write it's title and image to the screen
 	    var result = results[i]
-	    var image = $('<img src="'+ result.tbUrl + '">')
-      // $(image.appendTo('li'))
-      $('#content').append(image)
+	    var image = $('<img src="'+ result.url + '">')
+      // $(image.appendTo(''.bxslider li''))
+      $('.bxslider li').append(image)
       // console.log(image)
-      
+      // $('.bxslider li').bxslider()
+      // $('.bxslider').bxslider('refresh')
+};
       
 	  }
-      $("#content").slidesjs()
-        
-      // $("#content").slidesjs("refresh");
-      console.log("slider is working")
   }
-}
 
 
+
+// var slider = $('.bxslider').bxSlider({
+//   mode: 'horizontal'
+// });
+
+// $('#reload-slider').click(function(e){
+//   e.preventDefault();
+//   $('.bxslider').append('<li><img src="'+ result.url + '"></li>');
+//   slider.reloadSlider();
+// });
+  
+
+
+
+    // Slidejs code
+    // if (window.slidesjsReady) {
+    //   $("#content").slidesjs("refresh");
+    // } else {
+    //   $("#content").slidesjs()
+    //   window.slidesjsReady = true
+    // }
 
 // $(function(){
 //   var slideShowContainer = $('.slideShow'),
