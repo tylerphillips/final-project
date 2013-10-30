@@ -13,8 +13,6 @@ function loadLyrics(data) {
   	
   	$('#player').attr('src', newUrl)
   	
-  	
-
   	$.getJSON("http://lyrics.wikia.com/api.php?callback=?",
   	
   	{
@@ -27,8 +25,6 @@ function loadLyrics(data) {
 
   	function(data){
   	  $('#lyrics').text(data.lyrics);
-  // Restrict to extra large images only
-  
 
   	  window.imageSearch = new google.search.ImageSearch();
 
@@ -44,12 +40,7 @@ function loadLyrics(data) {
 
       imageSearch.setSearchCompleteCallback(this, searchComplete, null);
 
-
-
-    //   var resultSize = new google.search.ImageSearch();
-    // resultSize.setResultSetSize(8);
-
-      // find the lyrics
+      // Find the lyrics
       imageSearch.execute(data.lyrics);
       
       // Include the required Google branding
@@ -126,6 +117,7 @@ $.get("https://embed.spotify.com/?uri=" + songs[0].spotifyURI)
 
 google.load('search', '1');
 
+// searchComplete called in click event
 function searchComplete() {
 	$('#content').html('')
 	// Check that we got results
@@ -139,32 +131,26 @@ function searchComplete() {
 	    // For each result write it's title and image to the screen
 	    var result = results[i]
 	    var image = $('<img src="'+ result.url + '">')
-      // $(image.appendTo(''.bxslider li''))
-      $('.bxslider li').append(image)
-      // console.log(image)
-      // $('.bxslider li').bxslider()
-      // $('.bxslider').bxslider('refresh')
-};
+    
+
+    $('#custom').css('background-image', 'url(' + result.url + ')');
+
       
+};      
 	  }
   }
 
+        // $('#content').append(image)
+        
+    // bxslider code
+      // $(image.appendTo(''.bxslider li''))
+      // $('.bxslider').append(image)
+      
+      // console.log(image)
+      // $('.bxslider li').bxslider()
+      // $('.bxslider').bxslider('refresh')
 
-
-// var slider = $('.bxslider').bxSlider({
-//   mode: 'horizontal'
-// });
-
-// $('#reload-slider').click(function(e){
-//   e.preventDefault();
-//   $('.bxslider').append('<li><img src="'+ result.url + '"></li>');
-//   slider.reloadSlider();
-// });
-  
-
-
-
-    // Slidejs code
+  // Slidejs code
     // if (window.slidesjsReady) {
     //   $("#content").slidesjs("refresh");
     // } else {
