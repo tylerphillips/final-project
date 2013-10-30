@@ -100,7 +100,7 @@ a:hover, a:focus {
 	padding: 10px 15px;
 	text-align: center;
 	// margin-left: 350px;
-	margin-left: 65px;
+	margin-left: 205px;
 	margin-bottom: 10px;
 	display: inline-block;
 }
@@ -147,17 +147,17 @@ a:hover, a:focus {
 	color: Grey;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	width: 565px;
+	width: 680px;
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 40px;
 	text-shadow: 2px 2px 2px #0f0f0f;
 	display: inline-block;
 	position: absolute;
-
+	line-height: 40px;
 }
 
 #player {
-	margin-left: 40px;
+	// margin-left: 40px;
 }
 
 // Google Image search results are contained within this div
@@ -186,11 +186,15 @@ a:hover, a:focus {
 }
 
 #custom {
-	width: 940px;
-	height: 400px;
+	// width: 970px;
+	width: 100%;
+	height: 600px;
 	background-position: center;
+	background-repeat: no-repeat;
 	border: solid 15px #363535;
 	margin-bottom: 25px;
+	background-image: url(http://www.davelope.net/wp-content/uploads/2013/05/spotify-logo.png);
+	background-size: cover;
 }
 
 

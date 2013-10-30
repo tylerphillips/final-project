@@ -71,6 +71,11 @@ function loadLyrics(data) {
       lyricLink: 'http://lyrics.wikia.com/api.php?artist=lorde&song=royals'
     }, 
     {
+      spotifyURI: 'spotify:track:7s0lDK7y3XLmI7tcsRAbW0',
+      artistName: 'Fall Out Boy',
+      songName: 'My Songs Know What You Did In The Dark (Light Em Up)'
+    },
+    {
       spotifyURI: 'spotify:track:2QepprWju53OwtTHrpnLo9',
       artistName: 'Goldfrapp',
       songName: 'Happiness'
@@ -84,6 +89,11 @@ function loadLyrics(data) {
       spotifyURI: 'spotify:track:4xjC014uAzL5O8xD1Tp6NC',
       artistName: 'Hudson Taylor',
       songName: 'Battles'
+    },
+    {
+      spotifyURI: 'spotify:track:4KXzKRp4amS8unfZaxCGS9',
+      artistName: 'Delta Rae',
+      songName: 'Morning Comes'
     },
     {
       spotifyURI: 'spotify:track:5PUvinSo4MNqW7vmomGRS7',
@@ -125,37 +135,18 @@ function searchComplete() {
     
 	  // Loop through our results, printing them to the page.
 	  var results = imageSearch.results;
+    var counter = 0     
 
-
-	  for (var i = 0; i < results.length; i++) {
-	    // For each result write it's title and image to the screen
-	    var result = results[i]
-	    var image = $('<img src="'+ result.url + '">')
-      var imageArray = []
+    clearInterval(slideshow);
     
+    var slideshow = setInterval()
 
-    $('#custom').css('background-image', 'url(' + result.url + ')')
-    // var intervalID = window.setInterval(
-    //   $('#custom').css('background-image', 'url(' + result.url + ')');, 3000);
-    $.get(result.url, function(images){
-      
-
-
-      })
-    imageArray.forEach(function(image){
-    // images.forEach(function(image){
-        imageArray.push(image)
-    })
-
-    var counter = 0
-
-    setInterval(function(){
-         $('#custom').css('background-image', 'url(' + result.url + ')')
-         counter += 1
-         if (counter == 3){counter = 0}
-        }, 3000)
-    };      
-	}
+    slideshow = setInterval(function(){
+       $('#custom').css('background-image', 'url(' + results[counter].url + ')')
+       counter += 1
+       if (counter > 3){counter = 0}
+      }, 3000)
+    }; 
 }
 
         // $('#content').append(image)
