@@ -55,6 +55,11 @@ function loadLyrics(data) {
 
   var songs = [
     {
+      spotifyURI: 'spotify:track:3Kj2EWpIBnvETsYq4cq0IH',
+      artistName: 'Gregory Alan Isakov',
+      songName: 'Big Black Car'
+    },
+    {
       spotifyURI: 'spotify:track:2JFmTONwQdRaOj2s2DhFah',
       artistName: 'Ben Howard',
       songName: 'Keep Your Head Up',
@@ -101,11 +106,6 @@ function loadLyrics(data) {
       songName: 'Blurred Lines'
     },
     {
-      spotifyURI: 'spotify:track:3Kj2EWpIBnvETsYq4cq0IH',
-      artistName: 'Gregory Alan Isakov',
-      songName: 'Big Black Car'
-    },
-    {
       spotifyURI: 'spotify:track:0kzfqqvipRSBQchrB3xX8D',
       artistName: 'Dawes',
       songName: 'When My Time Comes'
@@ -137,15 +137,18 @@ function searchComplete() {
 	  var results = imageSearch.results;
     var counter = 0     
 
-    clearInterval(slideshow);
-    
-    var slideshow = setInterval()
+    // If slideshow exists, clear the previous slides.
+    if (window.slideshow) {
+      clearInterval(window.slideshow);
+    }
 
-    slideshow = setInterval(function(){
+    // Slideshow
+    window.slideshow = setInterval(function(){
+      console.log('changing slides!')
        $('#custom').css('background-image', 'url(' + results[counter].url + ')')
        counter += 1
        if (counter > 3){counter = 0}
-      }, 3000)
+      }, 5000)
     }; 
 }
 

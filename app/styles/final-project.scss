@@ -195,8 +195,11 @@ a:hover, a:focus {
 	margin-bottom: 25px;
 	background-image: url(http://www.davelope.net/wp-content/uploads/2013/05/spotify-logo.png);
 	background-size: cover;
+	box-shadow: inset 0px 0px 0px 1.5px black;
 }
-
+ .outerWidgetContainer {
+ 	width:240px;
+ }
 
 // .slideShow {
 //   width: 500px;
