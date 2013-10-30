@@ -131,17 +131,35 @@ function searchComplete() {
 	    // For each result write it's title and image to the screen
 	    var result = results[i]
 	    var image = $('<img src="'+ result.url + '">')
+      var imageArray = []
     
 
-    $('#custom').css('background-image', 'url(' + result.url + ')');
-
+    $('#custom').css('background-image', 'url(' + result.url + ')')
+    // var intervalID = window.setInterval(
+    //   $('#custom').css('background-image', 'url(' + result.url + ')');, 3000);
+    $.get(result.url, function(images){
       
-};      
-	  }
-  }
+
+
+      })
+    imageArray.forEach(function(image){
+    // images.forEach(function(image){
+        imageArray.push(image)
+    })
+
+    var counter = 0
+
+    setInterval(function(){
+         $('#custom').css('background-image', 'url(' + result.url + ')')
+         counter += 1
+         if (counter == 3){counter = 0}
+        }, 3000)
+    };      
+	}
+}
 
         // $('#content').append(image)
-        
+
     // bxslider code
       // $(image.appendTo(''.bxslider li''))
       // $('.bxslider').append(image)
