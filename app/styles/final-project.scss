@@ -2,7 +2,7 @@ $spotify-green: rgb(134,181,0);
 
 body {
     background-color: rgb(26, 26, 26);
-	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -22,10 +22,12 @@ img {
 
 .text-muted {
 	position: relative;
-	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
 	display: inline-block;
 	color: white;
 	top: 5px;
+	letter-spacing: -1px;
+	font-weight: bold;
 
 }
 
@@ -39,7 +41,7 @@ img {
 }
 
 a {
-	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
     // color: $spotify-green;
     color: white;
 }
@@ -142,7 +144,7 @@ a:hover, a:focus {
 // Lyrics Style
 
 #lyrics {
-	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
 	font-size: 25px;
 	color: Grey;
 	padding-top: 25px;
@@ -177,7 +179,7 @@ a:hover, a:focus {
 .terms {
 	color: $spotify-green;
 	text-align: center;
-	font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
 	padding-top: 15px;
 }
 
@@ -200,33 +202,3 @@ a:hover, a:focus {
  .outerWidgetContainer {
  	width:240px;
  }
-
-// .slideShow {
-//   width: 500px;
-//   overflow: auto;
-//   position: relative;
-//   height: 300px;
-//   margin: 20px auto;
-// }
-
-// .slides {
-//   	width: 500%;
-//     height: 100%;
-// }
-
-// .slides li {
-//   float: left;
-//   width: 500px;
-//   height: 100%;
-//   display: block;
-//   line-height: 300px;
-//   text-align: center;
-// }
-
-// .slides li:nth-of-type(even) {
-//   background: #ff8330;
-// }
-
-// .slides li:nth-of-type(odd) {
-//   background: #6CC5EB;
-// }
