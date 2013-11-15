@@ -202,3 +202,67 @@ a:hover, a:focus {
  .outerWidgetContainer {
  	width:240px;
  }
+
+@media only screen and (max-width: 780px){
+	#custom {
+		height: 655px;
+		width: 875px;
+	}
+
+}@media only screen and (max-width: 690px){
+	#custom {
+		height: 556px;
+		width:776px;
+	}
+
+}
+@media only screen and (max-width: 545px){
+	#custom {
+		height: 500px;
+		width: 720px;
+	}
+
+		#lyrics {
+		display: inline-block;
+		width: 545px;
+		// margin-left: 0px;
+	}
+
+}
+@media only screen and (max-width: 400px){
+	#custom {
+		height: 460px;
+		width: 680px;
+	}
+	#lyrics {
+		display: inline-block;
+		width: 680px;
+		// margin-left: 0px;
+	}
+	#player {
+		margin-left: 200px;
+	}
+	.header {
+		width: 400px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.spotify-logo {
+		text-align: center;
+		margin: 0 auto;
+		margin-left: 257px;
+	}
+	.text-muted {
+		margin-left: 257px;
+	}
+	.get-spotify {
+		position: absolute;
+		left: -50px; 
+		margin-bottom: 10px;
+	}
+	.follow {
+		position: absolute;
+		left: 75px;
+	}
+
+}
